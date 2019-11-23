@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="./images/logo.jpg" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calendar</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body id="body">
+    <div class="container col-sm-4 col-md-7 col-lg-3 mt-5">
+      <div class="calendar">
+        <div class="image" id="image"></div>
+        <div id="but">
+          <button class="btn col-sm-2" id="previous" onclick="previous()">
+            <span class="glyphicon glyphicon-chevron-left"></span> Prev
+          </button>
+          <h3 id="monthAndYear"></h3>
+          <button class="btn col-sm-2" id="next" onclick="next()" align="right">
+            Next
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </button>
+        </div>
+        <div class="days">
+          <div class="day">S</div>
+          <div class="day">M</div>
+          <div class="day">T</div>
+          <div class="day">W</div>
+          <div class="day">Th</div>
+          <div class="day">F</div>
+          <div class="day">Sa</div>
+        </div>
+        <div class="date" id="date"></div>
+      </div>
+    </div>
+    <script src="./js/scripts.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.5.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+  </body>
+</html>
